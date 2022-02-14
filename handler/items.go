@@ -36,6 +36,22 @@ func ItemContext(next http.Handler) http.Handler {
     })
 }
 
+func createItem(w http.ResponseWriter, r *http.Request) {
+    item := &models.Item{}
+    if err := render.Bind(r, item); err != nil {
+        render.Render(w, r, ErrBadRequest)
+        return
+    }
+    if err := dbInstance.AddItem(item); err != nil {
+        render.Render(w, r, ErrorRenderer(err))
+        return
+    }
+    if err := render.Render(w, r, item); err != nil {
+        render.Render(w, r, ServerErrorRenderer(err))
+        return
+    }
+}
+
 func getAllItems(w http.ResponseWriter, r *http.Request) {
     items, err := dbInstance.GetAllItems()
     if err != nil {

@@ -1,4 +1,4 @@
-FROM golang:1.14.6-alpine3.12 as builder
+FROM golang:1.17rc1-alpine as builder
 RUN apk add git
 COPY go.mod go.sum /go/src/github.com/capahusky/big-mochi/
 WORKDIR /go/src/github.com/capahusky/big-mochi

@@ -1,4 +1,4 @@
-module github.com/capahusky/big_mochi
+module github.com/capahusky/big-mochi
 
 go 1.17
 
