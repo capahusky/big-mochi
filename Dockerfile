@@ -9,5 +9,5 @@ RUN CGO_ENABLED=0 GOOS=linux go build -a -installsuffix cgo -o build/big-mochi g
 FROM alpine
 RUN apk add --no-cache ca-certificates && update-ca-certificates
 COPY --from=builder /go/src/github.com/capahusky/big-mochi/build/big-mochi /usr/bin/big-mochi
-EXPOSE 8080 8080
+EXPOSE 8090 8090
 ENTRYPOINT ["/usr/bin/big-mochi"]
