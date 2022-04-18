@@ -1,3 +1,5 @@
+github.com/capahusky/big-mochi v0.0.0-20220214061220-16da05aa0838 h1:R4NSlFnWoHuInUGVZw2vaGlA6AAr71P/R+KyEtoV05E=
+github.com/capahusky/big-mochi v0.0.0-20220214061220-16da05aa0838/go.mod h1:XfOvPfC4IslW1IerSPh1njK51dn85z4/I7XdDMoT+HA=
 github.com/go-chi/chi v1.5.4 h1:QHdzF2szwjqVV4wmByUnTcsbIg7UGaQ0tPF2t5GcAIs=
 github.com/go-chi/chi v1.5.4/go.mod h1:uaf8YgoFazUOkPBG7fxPftUylNumIev9awIWOENIuEg=
 github.com/go-chi/render v1.0.1 h1:4/5tis2cKaNdnv9zFLfXzcquC9HbeZgCnxGnKrltBS8=
